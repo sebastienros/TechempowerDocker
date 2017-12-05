@@ -22,11 +22,11 @@ module.exports.BasicHandler = ((() => {
     '/mongodb/db':         MongodbRawHandler.SingleQuery,
     '/mongodb/fortunes':   MongodbRawHandler.Fortunes,
 
-    '/sequelize/db':       SequelizeHandler.SingleQuery,
-    '/sequelize/fortunes': SequelizeHandler.Fortunes,
+//    '/sequelize/db':       SequelizeHandler.SingleQuery,
+//    '/sequelize/fortunes': SequelizeHandler.Fortunes,
 
-    '/mysql/db':           MySQLRawHandler.SingleQuery,
-    '/mysql/fortunes':     MySQLRawHandler.Fortunes,
+//    '/mysql/db':           MySQLRawHandler.SingleQuery,
+//    '/mysql/fortunes':     MySQLRawHandler.Fortunes,
 
     '/sequelize-pg/db':       SequelizePgHandler.SingleQuery,
     '/sequelize-pg/fortunes': SequelizePgHandler.Fortunes
@@ -49,12 +49,12 @@ module.exports.QueryHandler = ((() => {
     '/mongodb/queries':   MongodbRawHandler.MultipleQueries,
     '/mongodb/updates':   MongodbRawHandler.Updates,
 
-    '/sequelize/queries': SequelizeHandler.MultipleQueries,
-    '/sequelize/updates': SequelizeHandler.Updates,
+//    '/sequelize/queries': SequelizeHandler.MultipleQueries,
+//    '/sequelize/updates': SequelizeHandler.Updates,
 
-    '/mysql/queries':     MySQLRawHandler.MultipleQueries,
-    '/mysql/updates':     MySQLRawHandler.Updates,
-    '/mysql/cached' :     MySQLRawHandler.CachedQueries,
+//    '/mysql/queries':     MySQLRawHandler.MultipleQueries,
+//    '/mysql/updates':     MySQLRawHandler.Updates,
+//    '/mysql/cached' :     MySQLRawHandler.CachedQueries,
 
     '/sequelize-pg/queries': SequelizePgHandler.MultipleQueries,
     '/sequelize-pg/updates': SequelizePgHandler.Updates
