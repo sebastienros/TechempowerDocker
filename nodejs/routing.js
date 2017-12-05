@@ -2,7 +2,7 @@
 // * Mongoose is a popular Node/MongoDB driver
 // * Sequelize is a popular Node/SQL driver
 const MongodbRawHandler = require('./handlers/mongodb-raw');
-const MySQLRawHandler = require('./handlers/mysql-raw');
+// const MySQLRawHandler = require('./handlers/mysql-raw');
 const MongooseHandler = require('./handlers/mongoose');
 const SequelizeHandler = require('./handlers/sequelize');
 const SequelizePgHandler = require('./handlers/sequelize-postgres');
@@ -22,8 +22,8 @@ module.exports.BasicHandler = ((() => {
     '/mongodb/db':         MongodbRawHandler.SingleQuery,
     '/mongodb/fortunes':   MongodbRawHandler.Fortunes,
 
-//    '/sequelize/db':       SequelizeHandler.SingleQuery,
-//    '/sequelize/fortunes': SequelizeHandler.Fortunes,
+    '/sequelize/db':       SequelizeHandler.SingleQuery,
+    '/sequelize/fortunes': SequelizeHandler.Fortunes,
 
 //    '/mysql/db':           MySQLRawHandler.SingleQuery,
 //    '/mysql/fortunes':     MySQLRawHandler.Fortunes,
@@ -49,8 +49,8 @@ module.exports.QueryHandler = ((() => {
     '/mongodb/queries':   MongodbRawHandler.MultipleQueries,
     '/mongodb/updates':   MongodbRawHandler.Updates,
 
-//    '/sequelize/queries': SequelizeHandler.MultipleQueries,
-//    '/sequelize/updates': SequelizeHandler.Updates,
+    '/sequelize/queries': SequelizeHandler.MultipleQueries,
+    '/sequelize/updates': SequelizeHandler.Updates,
 
 //    '/mysql/queries':     MySQLRawHandler.MultipleQueries,
 //    '/mysql/updates':     MySQLRawHandler.Updates,
