@@ -1,46 +1,46 @@
 {
     "Default": {
-      "Source": {
-        "Repository": "https://github.com/sebastienros/TechempowerDocker.git",
-        "Project": "undertow/undertow.csproj",        
-        "BranchOrCommit": "database",
-        "DockerFile": "undertow/Dockerfile"
-      },
-      "Port": 8080
+        "Source": {
+            "Repository": "https://github.com/sebastienros/TechempowerDocker.git",
+            "Project": "undertow/undertow.csproj",
+            "BranchOrCommit": "database",
+            "DockerFile": "undertow/Dockerfile"
+        },
+        "Port": 8080
     },
     "Plaintext": {
-      "Path": "/plaintext",
-      "PresetHeaders": "Plaintext",
-      "ScriptName": "pipeline",
-      "PipelineDepth": 16
+        "Path": "/plaintext",
+        "PresetHeaders": "Plaintext",
+        "ScriptName": "pipeline",
+        "PipelineDepth": 16
     },
     "PlaintextNonPipelined": {
-      "Path": "/plaintext",
-      "PresetHeaders": "Plaintext"
+        "Path": "/plaintext",
+        "PresetHeaders": "Plaintext"
     },
     "Json": {
-      "Path": "/json",
-      "PresetHeaders": "Json"
+        "Path": "/json",
+        "PresetHeaders": "Json"
     },
     "FortunesMySql": {
-      "Path": "/fortunes",
-      "PresetHeaders": "Html",
-      "Source": {
-        "DockerFile": "undertow/Dockerfile.mysql"
-      }
+        "Path": "/fortunes",
+        "PresetHeaders": "Html",
+        "Source": {
+            "DockerFile": "undertow/Dockerfile.mysql"
+        }
     },
     "FortunesPostgreSql": {
-      "Path": "/fortunes",
-      "PresetHeaders": "Html",
-      "Source": {
-        "DockerFile": "undertow/Dockerfile.postgresql"
-      }
+        "Path": "/fortunes",
+        "PresetHeaders": "Html",
+        "Source": {
+            "DockerFile": "undertow/Dockerfile.postgresql"
+        }
     },
     "FortunesMongoDb": {
-      "Path": "/fortunes",
-      "PresetHeaders": "Html",
-      "Source": {
-        "DockerFile": "undertow/Dockerfile.mongodb"
-      }
+        "Path": "/fortunes",
+        "PresetHeaders": "Html",
+        "Source": {
+            "DockerFile": "undertow/Dockerfile.mongodb"
+        }
     }
-  }
+}
