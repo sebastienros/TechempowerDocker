@@ -12,4 +12,4 @@ RUN mvn clean package
 FROM openjdk:8
 WORKDIR /app
 COPY --from=undertow-build-env /app/target/ ./
-ENTRYPOINT ["java", "-jar", "hello-undertow.jar", $UNDERTOW_ARGS]
+ENTRYPOINT ["java", "-jar", "hello-undertow.jar", "NO_DATABASE"]
