@@ -1,9 +1,9 @@
 {
     "Default": {
       "Source": {
-        "Repository": "https://github.com/davidfowl/TechempowerDocker.git",
+        "Repository": "https://github.com/sebastienros/TechempowerDocker.git",
         "Project": "nodejs/nodejs.csproj",        
-        "BranchOrCommit": "master",
+        "BranchOrCommit": "database",
         "DockerFile": "nodejs/Dockerfile"
       },
       "Port": 8080
@@ -21,5 +21,17 @@
     "Json": {
       "Path": "/json",
       "PresetHeaders": "Json"
+    },
+    "FortunesMySql": {
+      "Path": "/sequelize/db",
+      "PresetHeaders": "Html"
+    },
+    "FortunesPostgreSql": {
+      "Path": "/sequelize-pg/fortunes",
+      "PresetHeaders": "Html"
+    },
+    "FortunesMongoDb": {
+      "Path": "/mongodb/fortunes",
+      "PresetHeaders": "Html"
     }
-  }
+}
