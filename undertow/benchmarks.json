@@ -27,13 +27,15 @@
       "PresetHeaders": "Html",
       "Source": {
         "DockerFile": "undertow/Dockerfile.mysql"
-      },
+      }
+    },
     "FortunesPostgreSql": {
       "Path": "/fortunes",
       "PresetHeaders": "Html",
       "Source": {
         "DockerFile": "undertow/Dockerfile.postgresql"
-      },
+      }
+    },
     "FortunesMongoDb": {
       "Path": "/fortunes",
       "PresetHeaders": "Html",
