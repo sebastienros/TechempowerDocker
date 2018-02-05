@@ -36,6 +36,13 @@
             "DockerFile": "undertow/Dockerfile.postgresql"
         }
     },
+    "FortunesSqlServer": {
+        "Path": "/fortunes",
+        "PresetHeaders": "Html",
+        "Source": {
+            "DockerFile": "undertow/Dockerfile.sqlserver"
+        }
+    },
     "FortunesMongoDb": {
         "Path": "/fortunes",
         "PresetHeaders": "Html",
