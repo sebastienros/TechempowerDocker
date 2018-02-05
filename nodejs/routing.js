@@ -29,7 +29,11 @@ module.exports.BasicHandler = ((() => {
 //    '/mysql/fortunes':     MySQLRawHandler.Fortunes,
 
     '/sequelize-pg/db':       SequelizePgHandler.SingleQuery,
-    '/sequelize-pg/fortunes': SequelizePgHandler.Fortunes
+    '/sequelize-pg/fortunes': SequelizePgHandler.Fortunes,
+
+    '/sequelize-mssql/db':       SequelizePgHandler.SingleQuery,
+    '/sequelize-mssql/fortunes': SequelizePgHandler.Fortunes
+
   };
 
   self.has = (path) => self.routes[path];
@@ -57,8 +61,11 @@ module.exports.QueryHandler = ((() => {
 //    '/mysql/cached' :     MySQLRawHandler.CachedQueries,
 
     '/sequelize-pg/queries': SequelizePgHandler.MultipleQueries,
-    '/sequelize-pg/updates': SequelizePgHandler.Updates
-  };
+    '/sequelize-pg/updates': SequelizePgHandler.Updates,
+
+    '/sequelize-mssql/queries': SequelizePgHandler.MultipleQueries,
+    '/sequelize-mssql/updates': SequelizePgHandler.Updates
+};
 
   self.has = (path) => self.routes[path];
 
