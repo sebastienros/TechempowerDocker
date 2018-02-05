@@ -107,6 +107,26 @@ public final class HelloWebServer {
             .addExactPath("/updates",  new BlockingHandler(new UpdatesSqlHandler(db)));
       }
     },
+    
+    /**
+     * The server will use a Sql Server database and will only implement the
+     * test types that require a database.
+     */
+    SQLSERVER() {
+      @Override
+      HttpHandler paths(Properties props) {
+        String jdbcUrl = props.getProperty("sqlserver.jdbcUrl");
+        String username = props.getProperty("sqlserver.username");
+        String password = props.getProperty("sqlserver.password");
+        int connections = Integer.parseInt(props.getProperty("sqlserver.connections"));
+        DataSource db = newSqlDataSource(jdbcUrl, username, password, connections);
+        return new PathHandler()
+            .addExactPath("/db",       new BlockingHandler(new DbSqlHandler(db)))
+            .addExactPath("/queries",  new BlockingHandler(new QueriesSqlHandler(db)))
+            .addExactPath("/fortunes", new BlockingHandler(new FortunesSqlHandler(db)))
+            .addExactPath("/updates",  new BlockingHandler(new UpdatesSqlHandler(db)));
+      }
+    },
 
     /**
      * The server will use a MongoDB database and will only implement the test
