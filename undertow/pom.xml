@@ -20,6 +20,7 @@
     <version.mustache>0.9.4</version.mustache>
     <version.mysql>5.1.41</version.mysql>
     <version.postgresql>9.4.1212</version.postgresql>
+    <version.sqlserver>6.1.0.jre8</version.postgresql>
     <version.undertow>1.4.13.Final</version.undertow>
   </properties>
 
@@ -42,6 +43,11 @@
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>${version.postgresql}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.sqlserver</groupId>
+      <artifactId>mssql-jdbc</artifactId>
+      <version>${version.sqlserver}</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
