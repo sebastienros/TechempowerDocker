@@ -30,6 +30,10 @@
       "Path": "/sequelize-pg/fortunes",
       "PresetHeaders": "Html"
     },
+    "FortunesSqlServer": {
+      "Path": "/sequelize-mssql/fortunes",
+      "PresetHeaders": "Html"
+    },
     "FortunesMongoDb": {
       "Path": "/mongodb/fortunes",
       "PresetHeaders": "Html"
