@@ -6,6 +6,7 @@ const MongodbRawHandler = require('./handlers/mongodb-raw');
 const MongooseHandler = require('./handlers/mongoose');
 const SequelizeHandler = require('./handlers/sequelize');
 const SequelizePgHandler = require('./handlers/sequelize-postgres');
+const SequelizeMsSqlHandler = require('./handlers/sequelize-sqlserver');
 
 const h = require('./helper');
 
@@ -31,8 +32,8 @@ module.exports.BasicHandler = ((() => {
     '/sequelize-pg/db':       SequelizePgHandler.SingleQuery,
     '/sequelize-pg/fortunes': SequelizePgHandler.Fortunes,
 
-    '/sequelize-mssql/db':       SequelizePgHandler.SingleQuery,
-    '/sequelize-mssql/fortunes': SequelizePgHandler.Fortunes
+    '/sequelize-mssql/db':       SequelizeMsSqlHandler.SingleQuery,
+    '/sequelize-mssql/fortunes': SequelizeMsSqlHandler.Fortunes
 
   };
 
@@ -63,8 +64,8 @@ module.exports.QueryHandler = ((() => {
     '/sequelize-pg/queries': SequelizePgHandler.MultipleQueries,
     '/sequelize-pg/updates': SequelizePgHandler.Updates,
 
-    '/sequelize-mssql/queries': SequelizePgHandler.MultipleQueries,
-    '/sequelize-mssql/updates': SequelizePgHandler.Updates
+    '/sequelize-mssql/queries': SequelizeMsSqlHandler.MultipleQueries,
+    '/sequelize-mssql/updates': SequelizeMsSqlHandler.Updates
 };
 
   self.has = (path) => self.routes[path];
