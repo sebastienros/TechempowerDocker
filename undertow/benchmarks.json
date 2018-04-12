@@ -1,10 +1,10 @@
 {
     "Default": {
         "Source": {
-            "Repository": "https://github.com/sebastienros/TechempowerDocker.git",
-            "Project": "undertow/undertow.csproj",
-            "BranchOrCommit": "database",
-            "DockerFile": "undertow/Dockerfile"
+            "Repository": "https://github.com/TechEmpower/FrameworkBenchmarks.git",
+            "Project": "",
+            "BranchOrCommit": "master",
+            "DockerFile": "FrameworkBenchmarks/frameworks/Java/undertow/undertow.dockerfile"
         },
         "Port": 8080
     },
