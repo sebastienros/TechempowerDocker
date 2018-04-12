@@ -2,7 +2,7 @@
     "Default": {
         "Source": {
             "Repository": "https://github.com/TechEmpower/FrameworkBenchmarks.git",
-            "Project": "",
+            "Project": "undertow/undertow.csproj",
             "BranchOrCommit": "master",
             "DockerFile": "FrameworkBenchmarks/frameworks/Java/undertow/undertow.dockerfile"
         },
