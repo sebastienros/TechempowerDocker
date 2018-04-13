@@ -4,7 +4,7 @@
             "Repository": "https://github.com/TechEmpower/FrameworkBenchmarks.git",
             "Project": "undertow/undertow.csproj",
             "BranchOrCommit": "master",
-            "DockerFile": "FrameworkBenchmarks/frameworks/Java/undertow/undertow.dockerfile"
+            "DockerFile": "frameworks/Java/undertow/undertow.dockerfile"
         },
         "Port": 8080
     },
